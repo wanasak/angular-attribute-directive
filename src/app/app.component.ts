@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1 [highlight]="color">Hello {{name}}</h1>`,
+  template: `
+    <h1 [highlight]="color">Hello {{name}}</h1>
+    <h1 [highlight]="" defaultColor="violet">Hello {{name}}</h1>
+  `,
 })
 export class AppComponent {
   name: string = 'Angular';
